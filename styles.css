@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border: 30px solid white;
+    border-radius: 45px;
+    box-shadow: 0px 3px 10px rgb(210, 210, 210);
+
+    max-width: 540px;
+    min-width: 540px;
+    height: 540px;
+    min-height: 540px;
+}
+
+
+/*PIXEL DESIGN*/
+.pixel {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transition: 0.2s;
+}
+.pixel:first-child {
+    border-radius: 25px 0px 0px 0px;
+}
+.pixel:nth-child(16) {
+    border-radius: 0px 25px 0px 0px;
+}
+.pixel:nth-child(241) {
+    border-radius: 0px 0px 0px 25px;
+}
+.pixel:last-child {
+    border-radius: 0px 0px 25px 0px;
+}
