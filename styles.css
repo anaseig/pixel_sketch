@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 body, html {
@@ -10,48 +12,79 @@ body, html {
     background-color: rgb(255, 255, 255);
 }
 
-#mainContainer {
+.container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 600px;
+    gap: 30px;
+}
+.leftDiv, .rightDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-#container {
+
+/*CANVAS*/
+#canvas {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
-    border: 30px solid white;
-    border-radius: 45px;
-    box-shadow: 0px 3px 10px rgb(210, 210, 210);
-
-    max-width: 540px;
-    min-width: 540px;
-    height: 540px;
-    min-height: 540px;
+    border: 20px solid white;
+    border-radius: 35px;
+    box-shadow: 0px 3px 10px rgb(192, 192, 192);
 }
 
 
-/*PIXEL DESIGN*/
+/*PIXEL*/
 .pixel {
     width: 30px;
     height: 30px;
     background-color: white;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 .pixel:first-child {
-    border-radius: 25px 0px 0px 0px;
+    border-radius: 20px 0px 0px 0px;
 }
 .pixel:nth-child(16) {
-    border-radius: 0px 25px 0px 0px;
+    border-radius: 0px 20px 0px 0px;
 }
 .pixel:nth-child(241) {
-    border-radius: 0px 0px 0px 25px;
+    border-radius: 0px 0px 0px 20px;
 }
 .pixel:last-child {
-    border-radius: 0px 0px 25px 0px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+
+/*BUTTONS*/
+.button {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+    box-shadow: 0px 1px 5px rgb(171, 171, 171);
+    border: none;
+    border-radius: 100%;
+    transition: 0.2s;
+}
+#colorSelectButton {
+    background: black;
+    color: white;
+}
+#eraserButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rainbowButton {
+}
+.button:hover {
+    box-shadow: 0px 3px 5px rgb(129, 129, 129);
+    transition: 0.2s;
 }
