@@ -12,7 +12,7 @@ body, html {
     background-color: rgb(255, 255, 255);
 }
 
-.container {
+#container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,7 +35,7 @@ body, html {
     flex-wrap: wrap;
 
     border: 20px solid white;
-    border-radius: 35px;
+    border-radius: 43px;
     box-shadow: 0px 3px 10px rgb(192, 192, 192);
 }
 
@@ -45,8 +45,9 @@ body, html {
     width: 30px;
     height: 30px;
     background-color: white;
-    transition: 0.1s;
+    transition: 0s;
 }
+
 .pixel:first-child {
     border-radius: 20px 0px 0px 0px;
 }
@@ -81,8 +82,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#rainbowButton {
 }
 .button:hover {
     box-shadow: 0px 3px 5px rgb(129, 129, 129);
